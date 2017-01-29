@@ -1,0 +1,19 @@
+.header {
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 60px;
+  background-color: #004A70;
+  color: #fafafa;
+
+  &-title{
+    color: #FAFAFA;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoraction: none;
+  }
+
+}

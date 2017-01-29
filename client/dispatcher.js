@@ -1,4 +1,4 @@
-import flux from 'flux';
-const Dispatcher = flux.Dispatcher;
+const Dispatcher = require("flux").Dispatcher;
+const appDispatcher = new Dispatcher();
 
-export default Dispatcher;
+export default appDispatcher;
