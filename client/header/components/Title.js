@@ -4,8 +4,8 @@ if (process.env.BROWSER ) {
     require ("../style/header.scss");
 }
 
-export default class Header extends React.Component {
+export default class Title extends React.Component {
     render(){
-        return (<header className="header"></header>)
+        return (<h2 className="headerTitle">My Store</h2> )
     }
 }

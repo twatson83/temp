@@ -1,8 +1,9 @@
 import React, {PropTypes} from "React";
-import Header from './Header.js';
+import Header from '../../header/components/Header.js';
 import Navigation from './Navigation.js';
 import accountStore from '../../account/store'
 import pageStore from '../stores/pageStore';
+import HomePage from '../../home/components/HomePage';
 
 if (process.env.BROWSER ) {
     require ("../style/app.scss");
@@ -37,7 +38,7 @@ export default class App extends React.Component {
                 <Header accountDetails={this.state.accountDetails} />
                 <Navigation selectedPage={this.state.selectedPage}/>
                 <div className="body">
-                    {this.children}
+                    {this.children || <HomePage />}
                 </div>
             </div>
         )

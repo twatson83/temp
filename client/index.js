@@ -1,12 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import App from './shared/components/App';
+import HomePage from './home/components/HomePage';
+import { Router, Route, browserHistory } from 'react-router';
 
 if (process.env.BROWSER ) {
     require ("./shared/style/fonts.scss");
     require ("./shared/style/base.scss")
 }
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+
+render((
+  <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <Route path="home" component={HomePage}/>
+      </Route>
+  </Router>
+), document.getElementById('root'));
