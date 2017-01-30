@@ -8,9 +8,12 @@ export default class BasketButton extends React.Component {
     render(){
         return (
             <a href="#" className="basketButton">
-                <img src="/images/cartIcon.png"/>
-                <span className="basketCount">{this.props.items}</span>
-                <span className="basketText">Basket</span>
+                <div className="basketButton-content">
+                    <img src="/images/cartIcon.png"/>
+                    <span className="basketCount">{this.props.items}</span>
+                    <br/>
+                    <span className="basketText">Basket</span>
+                </div>
             </a>
         )
     }

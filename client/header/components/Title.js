@@ -6,6 +6,6 @@ if (process.env.BROWSER ) {
 
 export default class Title extends React.Component {
     render(){
-        return (<h2 className="headerTitle">My Store</h2> )
+        return (<span className="header-title">My Store</span> )
     }
 }

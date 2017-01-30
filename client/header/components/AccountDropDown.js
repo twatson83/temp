@@ -30,10 +30,10 @@ export default class AccountDropDown extends React.Component {
                         </li>
                     }
                     <li>
-                        <Link className="accountDropDown-link yourAccount" to="/account">Your Account</Link>
+                        <Link className="accountDropDown-link yourAccount" to="/account/details">Your Account</Link>
                     </li>
                     <li>
-                        <Link className="accountDropDown-link yourOrders" to="/account">Your Orders</Link>
+                        <Link className="accountDropDown-link yourOrders" to="/account/orders">Your Orders</Link>
                     </li>
                 </ul>
             </div>

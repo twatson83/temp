@@ -12,8 +12,24 @@
     color: #FAFAFA;
     line-height: 60px;
     font-size: 16px;
-    font-weight: 400;
-    text-decoraction: none;
+    font-weight: 500;
+    padding-left: 10px;
   }
 
+}
+
+.accountDropDown{
+  float: right;
+  display: inline-block;
+}
+
+.basketButton{
+  float: right;
+  display: inline-block;
+  color: #FAFAFA;
+  text-decoration: none;
+  padding: 0 24px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 6px;
 }
