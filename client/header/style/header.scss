@@ -4,16 +4,16 @@
   right: 0;
   left: 0;
 
-  height: 60px;
-  background-color: #004A70;
+  height: 65px;
+  background-color: #232F3E;
   color: #fafafa;
 
   &-title{
     color: #FAFAFA;
-    line-height: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 10px;
+    line-height: 65px;
+    font-size: 26px;
+    font-weight: bolder;
+    padding-left: 15px;
   }
 
 }
@@ -21,15 +21,57 @@
 .accountDropDown{
   float: right;
   display: inline-block;
+
+  margin-right: 10px;
+
+  &-button{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 .basketButton{
+  margin-right: 10px;
   float: right;
   display: inline-block;
   color: #FAFAFA;
   text-decoration: none;
   padding: 0 24px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 6px;
+
+  &-content {
+    line-height: 18px;
+  }
+}
+
+.accountDropDown-hello{
+  padding-top: 11px;
+}
+
+.accountDropDown-yourAccount{
+  font-weight: bolder;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.basketCount {
+  float: right;
+  padding-top: 8px;
+  color: #FF9900;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-right: 5px;
+}
+
+.basketText {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.accountDropDown-menu{
+  display: none;
 }

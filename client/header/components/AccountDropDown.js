@@ -10,17 +10,20 @@ export default class AccountDropDown extends React.Component {
         return (
             <div className="accountDropDown">
                 <a href="#" className="accountDropDown-button">
-                    <span className="accountDropDown-hello">
+                    <div className="accountDropDown-hello">
                         {
                             this.props.accountDetails.signedIn ?
                                 "Hello " + this.props.accountDetails.username :
                                 "Hello. Sign in"
                         }
-                    </span>
-                    <span className="accountDropDown-hello">
-                        Your Account
-                    </span>
-                    <span className="caret"></span>
+                    </div>
+
+                    <div>
+                        <div className="accountDropDown-yourAccount">
+                            Your Account
+                        </div>
+                        <i className="caret fa fa-caret-down"></i>
+                    </div>
                 </a>
                 <ul className="accountDropDown-menu">
                     {

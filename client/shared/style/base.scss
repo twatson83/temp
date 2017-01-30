@@ -4,8 +4,20 @@ body, html {
   letter-spacing: normal;
   line-height: 24px;
   margin: 0;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
 }
 
 #root {
   height: 100%
+}
+
+.caret{
+  padding-left: 8px;
+  padding-top: 2px
+}
+
+ol, ul {
+  list-style-position: inside;
+  margin-top: 0;
+  margin-bottom: 0;
 }

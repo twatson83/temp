@@ -1,9 +1,56 @@
 .navigation {
   background-color: #FFFFFF;
-  width: 215px;
+  width: 200px;
   overflow: hidden;
   border-right: 1px solid #ccc;
   bottom: 0;
-  top: 60px;
+  top: 65px;
   position: absolute;
+
+  a {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    margin: 24px 0 0 30px;
+    padding-left: 12px;
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+
+  }
+
+  label {
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    color: #313131;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    margin: 24px 0 0 30px;
+    padding-left: 12px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0 0 0 42px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  li a {
+    padding: 4px 0 4px 12px;
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+  }
 }

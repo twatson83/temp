@@ -7,6 +7,7 @@ import { Router, Route, browserHistory } from 'react-router';
 if (process.env.BROWSER ) {
     require ("./shared/style/fonts.scss");
     require ("./shared/style/base.scss")
+    require ("font-awesome/scss/font-awesome.scss")
 }
 
 render((

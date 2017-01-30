@@ -12,8 +12,9 @@ export default class Header extends React.Component {
         return (
             <header className="header">
                 <Title />
-                <AccountDropDown accountDetails={this.props.accountDetails} />
+
                 <BasketButton items={this.props.accountDetails.basket} />
+                <AccountDropDown accountDetails={this.props.accountDetails} />
             </header>
         )
     }

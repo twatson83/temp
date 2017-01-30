@@ -9,16 +9,26 @@ export default class Navigation extends React.Component {
     render(){
         return (
             <div className="navigation">
-                <Link to="/"  className={ this.props.selectedPage === "Deals" ? "selectedPage" : "" }>Deals</Link>
+                <Link to="/"  className={ this.props.selectedPage === "Deals" ? "selectedPage" : "" }>Top Deals</Link>
+                <label>Products</label>
                 <ul>
                     <li>
-                        <Link to={"/products"}
-                              className={ this.props.selectedPage === "Products" ? "selectedPage" : "" }>
-                            Products
+                        <Link to={"/books"}
+                              className={ this.props.selectedPage === "Books" ? "selectedPage" : "" }>
+                            Books
+                        </Link>
+                        <Link to={"/music"}
+                              className={ this.props.selectedPage === "Music" ? "selectedPage" : "" }>
+                            Music
+                        </Link>
+                        <Link to={"/movies"}
+                              className={ this.props.selectedPage === "Movies" ? "selectedPage" : "" }>
+                            Movies
                         </Link>
                     </li>
                 </ul>
             </div>
+
         )
     }
 }
